@@ -1,0 +1,99 @@
+a) Objetivo del sitio:
+
+El objetivo del sitio web es desarrollar la tematica del Estudiante 4: Propiedades básicas de CSS, Display: inline, block, inline-block por medio de los recursos y contenidos que sean necesarios para abordar el tema.
+
+General
+
+El objetivo general del sitio web es poner en contexto y dar explicacion a los temas solicitados de forma que se de solucion a las tematicas planteadas.
+
+Objetivo específico 1
+
+Seleccionar una tematica para desarrollar por medio del sitio web
+
+Objetivo específico 2
+
+Crear un documento html donde se publicara el borrador de los contenidos que se realizaran en el sitio web.
+
+
+Objetivo específico 3
+
+hacer una maquetacion del sitio web para presentarla al cliente, que en este caso es la UNAD.
+
+b)Materiales:
+
+Coloque el nombre del material que usara para crear los contenidos de la sección y el enlace de descarga de los mismos sean estos Texto, Imágenes, Audios o Vídeos.
+
+Para la creacion de documentos de texto se usara el editor de texto atom y libreoffice para la creacion de documentos, para las imagenes programas de edicion como photoscape o paint, los audios por medio de audacity, y los videos por medio de un editor de video y un programa para grabar la pantalla. En este caso seria action para grabar la pantalla y camtasia studio para la edicion de video.
+
+
+
+
+
+
+
+
+
+
+c) Contenido:
+
+Redacte un borrador del contenido de lectura en formato de texto que tendrá la sección: (Sea este la presentación de la sección, el contenido o ambos; redacte un borrador del texto que publicara como contenido en la sección coloque un subtítulo para identificar si corresponde a la presentación de la sección o el contenido de lectura de la sección)
+
+Titulo de la seccion: Propiedades básicas de CSS, Display: inline, block, inline-block
+
+Contenido de lectura de la seccion: 
+
+
+La propiedad display puede tomar los valores
+
+.nombreSelector{display:block;}
+.nombreSelector{display:inline;}
+.nombreSelector{display:inline-block;}
+y los valores none, inherit e initial que veremos en otras publicaciones
+
+Los elementos en línea son
+
+a, span, label, strong, br, input, textarea, abbr, acronym, b, basefont, bdo, big, cite, code, dfn, em, font, i, kbd, q, s, samp, select, small, strike, sub, sup, u, u, var
+
+Su principales características son:
+
+son apilables. no tienen ni margin-top ni margin-bottom (por mucho que se lo indiques en el CSS). Si tienen margin-left y margin-right.
+no respetan ni width ni height. Estas medidas dependerán del tamaño en píxels de su contenido.
+a forma más fácil de saber si un elemento es en línea o no es darle ancho.
+
+Si le das width:100% y ves que la caja no ocupa todo el ancho disponible entonces se trata de un elemento en línea.
+
+Los elementos bloque son:
+
+div, p, h1, h2, h3, h4, h5, h6, hr, ol, ul, table, li, address, blockquote, center, dir, dl, fieldset, formisindex, noframes, noscript, pre, dd, dt, frameset, tbody, td, tfoot, th, thead, tr
+
+Sus principales características son:
+
+Fuerzan un salto de línea (ocupan todo el ancho disponible)
+Respetan el width, el height, el margin-top y el margin-bottom indicados por el usuario.
+
+El mejor modo de ver si un elemento es en bloque o no es escribir varios seguidos y comprobar si se fuerza el salto de línea o no.
+
+Si los elementos quedan uno al lado del otro entonces pueden ser de tipo inline-block o en línea.
+
+
+
+
+
+Los elementos inline-block son las imágenes.
+
+
+Una práctica común es convertir elementos bloque en elementos inline-block para maquetar un espacio de una web.
+
+Por ejemplo dividir la página en 3 section o article y ponerlos uno al lado del otro.
+
+Sería algo como:
+
+section{display:inline-block;width:33%;}
+
+fijaros en la imagen.
+
+Hacemos uso de la propiedad border-box para asegurarnos que el ancho de las columnas se calcular siempre para ocupar el 33%.
+
+También fijaros que para conseguir que la cajas estén perfectamente pegadas se usa font-size:0; en el selector universal y luego se corrige para cada etiqueta.
+
+Para este ejemplo, en el css hemos usado elementos section que de todos modos ya son bloque (la instrucción display:block; no hacía falta).
